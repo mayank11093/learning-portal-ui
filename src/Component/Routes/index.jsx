@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import Login from '../LoginModule';
 import Register from '../LoginModule/register';
 import { Grid, Header, Segment } from 'semantic-ui-react';
+import HomePage from '../HomePage';
 
 const Routes = () => {
 	return (
@@ -28,6 +29,7 @@ const Routes = () => {
 									path='/register'
 									component={Register}
 								/>
+								<Route exact path='/home' component={HomePage} />
 							</Switch>
 						</Router>
 					</Grid.Column>

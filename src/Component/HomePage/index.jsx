@@ -1,8 +1,15 @@
+import { useState } from 'react';
 import { connect } from 'react-redux';
-import './App.css';
-import Routes from './Component/Routes';
+import { Menu, Segment } from 'semantic-ui-react';
+import '../../App.css';
+import ReferenceLinks from '../Links';
 
 const App = () => {
+	const [activeItem, setActiveItem] = useState('Links');
+
+	const handleItemClick = (e, { name }) => {
+		setActiveItem(name);
+	};
 	return (
 		<Segment>
 			<Menu attached='top' tabular widths='3'>
@@ -24,7 +31,7 @@ const App = () => {
 			</Menu>
 
 			<Segment attached='bottom'>
-				<Register />
+				<ReferenceLinks />
 			</Segment>
 		</Segment>
 	);
