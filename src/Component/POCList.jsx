@@ -1,4 +1,4 @@
-import { Table, Form, Label, Button, List, Segment, Icon } from 'semantic-ui-react';
+import { Table, Icon } from 'semantic-ui-react';
 import '../App.css';
 
 const POCTable = () => {
@@ -26,11 +26,13 @@ const POCTable = () => {
 					<Table.Row textAlign='center'>
 						<Table.Cell>1</Table.Cell>
 						<Table.Cell>Customer POC</Table.Cell>
+						<Table.Cell>Java 8, Springboot, Rest</Table.Cell>
 						<Table.Cell>
-						Java 8, Springboot, Rest
+							<Icon name='eye' />
 						</Table.Cell>
-						<Table.Cell><Icon name="eye"/></Table.Cell>
-						<Table.Cell><Icon name="download"/></Table.Cell>
+						<Table.Cell>
+							<Icon name='download' />
+						</Table.Cell>
 					</Table.Row>
 				</Table.Body>
 			</Table>

@@ -1,0 +1,3 @@
+export const LOADING = 'LOADING';
+export const SET_USER_DATA = 'SET_USER_DATA';
+export const SET_USER_REGISTERED = 'SET_USER_REGISTERED';
