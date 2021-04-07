@@ -5,6 +5,7 @@ import Login from '../LoginModule';
 import Register from '../LoginModule/register';
 import { Grid, Header, Segment } from 'semantic-ui-react';
 import HomePage from '../HomePage';
+import Assignment from '../Assignment/Assignment';
 
 const Routes = () => {
 	return (
@@ -30,6 +31,7 @@ const Routes = () => {
 									component={Register}
 								/>
 								<Route exact path='/home' component={HomePage} />
+								<Route exact path='/assignment/:assignmentID' component={Assignment} />
 							</Switch>
 						</Router>
 					</Grid.Column>

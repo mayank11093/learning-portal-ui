@@ -2,7 +2,9 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import { Menu, Segment } from 'semantic-ui-react';
 import '../../App.css';
+import AssignmentTable from '../Assignment';
 import ReferenceLinks from '../Links';
+import POCTable from '../POC';
 
 const App = () => {
 	const [activeItem, setActiveItem] = useState('Links');
@@ -31,7 +33,9 @@ const App = () => {
 			</Menu>
 
 			<Segment attached='bottom'>
-				<ReferenceLinks />
+				{activeItem === 'Links'?<ReferenceLinks />:null}
+				{activeItem === 'POC'?<POCTable />:null}
+				{activeItem === 'Assignments'?<AssignmentTable />:null}
 			</Segment>
 		</Segment>
 	);
